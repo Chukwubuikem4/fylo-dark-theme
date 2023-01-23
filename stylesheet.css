@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+  /* Primary */
+  --bg-intro-email: hsl(217, 28%, 15%);
+  --bg-main: hsl(218, 28%, 13%);
+  --bg-footer: hsl(216, 53%, 9%);
+  --bg-testimonials: hsl(219, 30%, 18%);
+
+  /* Accent */
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --light-red-error: hsl(0, 100%, 63%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+}
+
+/* button background */
+.btn-bg{
+  background: linear-gradient(45deg, var(--blue), var(--cyan) 1%, var(--blue))
+}
+
+/* BACKGROUNDS */
+.bg-intro-email{
+  background: var(--bg-intro-email);
+}
+
+.bg-main{
+  background: var(--bg-main);
+}
+
+.bg-footer{
+  background: var(--bg-footer);
+}
+
+.bg-testimonials{
+  background: var(--bg-testimonials);
+}
+
+/* FONT FAMILY */
+.ff-raleway{
+  font-family: 'Raleway';
+}
+
+.ff-open-sans{
+  font-family: 'Open Sans';
+}
+
+
+/* HEADER */
+header.px-md-5{
+  background: url('images/bg-curvy-desktop.svg') center bottom 0px no-repeat, var(--bg-intro-email);
+  background-size: contain; 
+  padding-bottom: 10 !important;
+}
+
+/* logo */
+.logo img{
+  width: 90px;
+  height: 28px;
+}
+
+header .image-container.px-md-5{
+  padding-left: 30% !important;
+  padding-right: 30% !important;
+}
+
+/* button */
+header .image-container button.px-5.py-2{
+  padding: .8em 5em !important;
+}
+
+/* navigation */
+nav .container-fluid ul li>a:hover{
+  border-bottom: 1px #fff solid !important;
+  opacity: 100% !important;
+}
+
+header .image-container button.btn-bg:hover{
+  background: var(--cyan) !important;
+}
+
+
+/* MAIN */
+main.py-5.px-md-5{
+  padding: 5em 7em 22em 7em !important;
+}
+
+/* Major-container-1 */
+main .row .col-lg .first.w-75,
+main .row .col-lg .second.w-75,
+main .row .col-lg .third.w-75,
+main .row .col-lg .fourth.w-75{
+  width: 65% !important;
+}
+
+/* Major-container-2 */
+main .container-fluid-2 .col-md.text .link{
+  width: 166px;
+  border-bottom: 1px solid var(--cyan) !important;
+}
+
+main .container-fluid-2 .col-md.text .link:hover{
+  border-bottom: 1px solid #fff !important;
+}
+
+main .container-fluid-2 .col-md.text .link>a:hover{
+  color: #fff !important;
+}
+
+main .container-fluid-2 .col-md.text .link>a{
+  color: var(--cyan) !important;
+}
+
+/* Major container-3 */
+main .container-fluid-3 .col-lg{
+  background: var(--bg-testimonials)
+} 
+
+main .container-fluid-3 .col-lg .text p{
+  font-size: 16px !important;
+}
+
+main .container-fluid-3 .col-lg .avatar img{
+  width: 40px !important;
+  height: 40px !important;
+}
+
+main .container-fluid-3 .col-lg .name small{
+  font-size: 11px !important;
+}
+
+/* Major container-4 */
+main .container-fluid-4{
+  background: var(--bg-intro-email);
+  
+}
+
+main .container-fluid-4 form input.submit:hover{
+  background: var(--cyan) !important;
+}
+
+
+/* FOOTER */
+footer.p-x-5{
+  background: var(--bg-footer) !important;
+  padding: 13em 8em !important;
+}
+
+footer .second-container .mini-B small:hover,
+footer .second-container  ul.fourth-container li>a:hover,
+footer .second-container ul.fifth-container  li>a:hover{
+  opacity: 100 !important;
+}
+
+/*sixth-socials */
+footer .socials a>img{
+  height: 45px !important;
+  width: 45px !important;
+}
+
+
+@media(max-width: 767px){
+/* HEADER */
+  header.px-md-5{
+    background: url('images/bg-curvy-mobile.svg') center bottom 0px no-repeat, var(--bg-intro-email);
+    background-size: contain; 
+    padding-bottom: 10 !important;
+  }
+
+  header .image-container.px-md-5{
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  } 
+
+  /* MAIN */
+  main.py-5.px-md-5{
+    padding: 5em 2em 18em 2em !important;
+  }
+
+  /* Major container-1 */
+  main .row .col-lg .first.w-75,
+  main .row .col-lg .second.w-75,
+  main .row .col-lg .third.w-75,
+  main .row .col-lg .fourth.w-75{
+    width: 100% !important;
+  
+  }
+
+  /* Major-container-2 */
+  main .container-fluid-2 .col-md.text h2.w-50{
+    width: 100% !important;
+    font-size: 20px !important;
+  }
+
+  /* Major-container-3 */
+  main .container-fluid-3 .col-lg .text p{
+    font-size: 13px !important;
+  }
+
+  /* Major container-4 */
+  main .container-fluid-4{
+  width: 87% !important;
+  }
+
+  main .container-fluid-4 form{
+    width: 100% !important;
+  }
+
+  main .container-fluid-4 form input.submit.px-5{
+    padding-left: 21% !important;
+    padding-right: 21% !important
+  }
+
+  /* FOOTER */
+  footer.p-0{
+    background: var(--bg-footer) !important;
+    padding: 18em 3em 3em 3em !important;
+  }
+
+  footer .second-container .address.w-25{
+    width: 97% !important;
+  }
+}
+
+@media (max-width: 360px){
+  main .container-fluid-4 form input.submit.px-5{
+    padding-left: 13% !important;
+    padding-right: 13% !important
+  }
+}
+
+
+@media (768px <= width <= 1300px){
+
+  header .image-container.px-md-5{
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+  }
+
+  /* MAIN */
+  main.py-5.px-md-5{
+    padding: 5em 3em 22em 3em!important;
+  }
+  main .container-fluid-2 .col-md.text h2.w-50.pt-5{
+    width: 100% !important;
+    font-size: 25px !important;
+    padding-top: 0 !important;
+  }
+}
+
+@media (850px <= width <= 1135px){
+
+  main .container-fluid-2 .col-md.text.pt-md-5.mt-md-3{
+    padding-top: 1.5em !important;
+    margin-top: 0em !important;
+  }
+
+  main .container-fluid-2 .col-md.text h2.w-50.pt-5{
+    font-size: 20px !important;
+  }
+
+  main .container-fluid-2 .col-md.text p{
+    font-size: 14px !important;
+  }
+
+  footer.p-0{
+    background: var(--bg-footer) !important;
+    padding: 18em 3em 3em 3em !important;
+    font-size: 12px !important;
+  }
+}
+
+@media (768px <= width <= 849px){
+
+  main .container-fluid-2 .col-md.text.pt-md-5.mt-md-3{
+    padding-top: 0em !important;
+    margin-top: 0em !important;
+  }
+  main .container-fluid-2 .col-md.text h2.w-50.pt-5{
+    font-size: 20px !important;
+  }
+
+  main .container-fluid-2 .col-md.text p{
+    font-size: 14px !important;
+  }
+
+  footer.p-0{
+    background: var(--bg-footer) !important;
+    padding: 18em 3em 3em 3em !important;
+    font-size: 12px !important;
+  }
+}
+
