@@ -90,10 +90,10 @@ main.py-5.px-md-5{
 }
 
 /* Major-container-1 */
-main .row .col-lg .first.w-75,
-main .row .col-lg .second.w-75,
-main .row .col-lg .third.w-75,
-main .row .col-lg .fourth.w-75{
+main .row .col-md .first.w-75,
+main .row .col-md .second.w-75,
+main .row .col-md .third.w-75,
+main .row .col-md .fourth.w-75{
   width: 65% !important;
 }
 
@@ -182,10 +182,10 @@ footer .socials a>img{
   }
 
   /* Major container-1 */
-  main .row .col-lg .first.w-75,
-  main .row .col-lg .second.w-75,
-  main .row .col-lg .third.w-75,
-  main .row .col-lg .fourth.w-75{
+  main .row .col-md .first.w-75,
+  main .row .col-md .second.w-75,
+  main .row .col-md .third.w-75,
+  main .row .col-md .fourth.w-75{
     width: 100% !important;
   
   }
@@ -226,7 +226,14 @@ footer .socials a>img{
   }
 }
 
-@media (max-width: 360px){
+@media (max-width: 365px){
+  nav .container-fluid ul li{
+    margin-left: 1em !important;
+  }
+
+  nav .container-fluid ul li>a{
+    font-size: 11px !important;
+  }
   main .container-fluid-4 form input.submit.px-5{
     padding-left: 13% !important;
     padding-right: 13% !important
